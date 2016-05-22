@@ -1,0 +1,22 @@
+2.7:
+  	  if(monthNumber%4==0){
+      numSheep/=4;
+      console.log("Removing "+(numSheep*3)+" sheep from the population.");}
+      else if(numSheep>10000){numSheep/=2;console.log("Removing "+numSheep+" sheep from the population.");}
+
+2.8:
+  var totalGen = 19;
+  var totalMW = 0;
+  for(var currentGen=1;currentGen<=totalGen;currentGen++){
+  	if(currentGen%2!=0){
+  		console.log("Generator #"+currentGen+" is off.");}
+  	else{
+  		if(currentGen<=4){
+  			totalMW+=62;
+  			console.log("Generator #"+currentGen+" is on, adding 62 MW, for a total of "+totalMW+" MW!");}
+  		else{
+  			totalMW+=124;
+  			console.log("Generator #"+currentGen+" is on, adding 124 MW, for a total of "+totalMW+" MW!");}
+  		}
+  	}
+
